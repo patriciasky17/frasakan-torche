@@ -1,0 +1,188 @@
+:root{
+    --primary: #FFFDD0;
+    --secondary: #292b2c;
+    --tertiary: #292b2c;
+    --quaternary: #292b2c;
+    --quinary: #292b2c;
+    --senary: #292b2c;
+    --septenary: #292b2c;
+    --orange-text-color: #F26E21;
+}
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+    background-color: none;
+}
+
+h1{
+    font-size: 42px;
+}
+
+/* Welcome Section */
+
+#welcome{
+    background-image: url(../../assets/svg/Blob-blurred.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    font-family: 'Rajdhani', sans-serif;
+    background-size: 800px;
+}
+
+.welcome-section{
+    padding-top: 100px;
+}
+
+.welcome-section h1{
+    font-weight: 600;
+}
+
+.welcome-section p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.welcome-subsection:not(:last-child){
+    line-height: 36px;
+}
+
+.welcome-subsection:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-subsection:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.welcome-section .button-welcome button{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #39B04A;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 30px;
+}
+
+.carousel-description h4{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.carousel-description p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.splide__track{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.splide__slide{
+    background: radial-gradient(116.32% 219.59% at 3.4% 0.88%, #FFFFFF 10%, rgba(238, 238, 238, 0.2) 70%, rgba(255, 255, 255, 1.0) 100%);
+    /* background-color: #FFFDD0; */
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.splide__slide img{
+    width: 100%;
+    padding-top: 10px;
+}
+
+button.splide__pagination__page{
+    background-color: #39B04A;
+}
+
+button.splide__pagination__page.is-active{
+    background-color: #8AC13F;
+}
+
+.splide__arrow{
+    display: none;
+}
+
+.splide__progress__bar {
+    height: 3px;
+    background: rgb(84, 84, 84);
+}
+
+@media screen and (max-width: 1000px) {
+    .welcome-subsection:not(:last-child){
+        line-height: 30px;
+    }
+
+    #welcome .welcome-subsection:nth-child(1){
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .welcome-section .button-welcome button{
+        padding: 10px 25px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .splide__track{
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    
+    .welcome-section h1{
+        font-size: 36px;
+    }
+
+    .welcome-section p{
+        font-size: 16px;
+    }
+
+    .carousel-description h4{
+        font-size: 24px;
+    }
+
+    .carousel-description p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .welcome-section{
+        margin-top: 100px;
+        padding-top: 0px;
+    }
+
+    .welcome-section h1{
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .welcome-section p{
+        font-weight: 400;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .splide__slide{
+        margin-bottom: 30px;
+    }
+
+    .splide__track{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .splide__slide img{
+        height: 300px;
+    }
+}
+/* End Of Welcome Section */
