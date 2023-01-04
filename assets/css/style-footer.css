@@ -22,7 +22,6 @@
     margin: 0 0 20px 0;
     padding: 2px 0 2px 0;
     line-height: 1;
-    font-family: "Cairo", sans-serif;
     color: black;
     font-weight: 400;
     letter-spacing: 3px;
@@ -30,10 +29,8 @@
 }
 
 #footer .footer-top .footer-info p {
-    font-size: 13px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Cairo", sans-serif;
     color: black;
 }
 
