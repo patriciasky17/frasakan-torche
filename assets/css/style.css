@@ -116,12 +116,18 @@ button.splide__pagination__page.is-active{
 }
 
 @media screen and (max-width: 1000px) {
+    #welcome{
+        background-size: 600px;
+        margin-bottom: 400px;
+    }
+
     .welcome-subsection:not(:last-child){
         line-height: 30px;
+        margin-bottom: 20px;
     }
 
     #welcome .welcome-subsection:nth-child(1){
-        margin-top: 10px;
+        margin-top: 40px;
         align-items: center;
     }
 
@@ -129,6 +135,10 @@ button.splide__pagination__page.is-active{
         padding: 10px 25px;
         margin-right: 10px;
         font-size: 14px;
+    }
+
+    .splide__slide{
+        background: #fafafa98;
     }
 
     .splide__track{
@@ -164,7 +174,7 @@ button.splide__pagination__page.is-active{
         font-size: 24px;
     }
     
-    .welcome-section p{
+    .welcome-section p.welcome-description{
         font-weight: 400;
         text-align: center;
         font-size: 14px;
@@ -174,6 +184,14 @@ button.splide__pagination__page.is-active{
 @media screen and (max-width: 768px) {
     .splide__slide{
         margin-bottom: 30px;
+    }
+
+    #welcome{
+        background: none;
+    }
+
+    .welcome-section p.welcome-description{
+        text-align: center;
     }
 
     .splide__track{
@@ -186,3 +204,67 @@ button.splide__pagination__page.is-active{
     }
 }
 /* End Of Welcome Section */
+
+/* Applications Section */
+#applications{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(../../assets/svg/Blob-blurred.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 600px;
+}
+
+img.img-applications{
+    width: 80px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa5d;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #applications{
+        background: none;
+    }
+}
+
+/* End Of Applications Section */
+
+#grammar{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: url(../../assets/svg/Blob-blurred.png);
+    background-repeat: no-repeat;
+    background-position: 40% 75%;
+    background-size: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    #grammar .grammar-subsection:nth-child(1){
+        order: 2;
+    }
+
+    #grammar .grammar-subsection:nth-child(2){
+        order: 1;
+        text-align: center;
+    }
+}
+
+#outro {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#outro .button-welcome button{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #39B04A;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 10px 30px;
+}
