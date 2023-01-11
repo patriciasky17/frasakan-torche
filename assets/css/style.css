@@ -118,7 +118,6 @@ button.splide__pagination__page.is-active{
 @media screen and (max-width: 1000px) {
     #welcome{
         background-size: 600px;
-        margin-bottom: 400px;
     }
 
     .welcome-subsection:not(:last-child){
@@ -179,15 +178,37 @@ button.splide__pagination__page.is-active{
         text-align: center;
         font-size: 14px;
     }
+
+    #welcome{
+        margin-bottom: 0px;
+    }
+
+    .splide__track{
+        margin: 0;
+    }
+
+    .splide__slide{
+        padding: 20px;
+    }
+
+    .carousel-description h4{
+        font-size: 18px;
+    }
+
+    .carousel-description p{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .splide__slide{
         margin-bottom: 30px;
+
     }
 
     #welcome{
         background: none;
+        margin-bottom: 350px;
     }
 
     .welcome-section p.welcome-description{
@@ -200,7 +221,7 @@ button.splide__pagination__page.is-active{
     }
 
     .splide__slide img{
-        height: 300px;
+        max-height: 300px;
     }
 }
 /* End Of Welcome Section */
