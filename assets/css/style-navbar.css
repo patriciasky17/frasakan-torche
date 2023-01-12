@@ -41,8 +41,8 @@
 }
 
 /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
+    # Navigation Menu
+--------------------------------------------------------------*/
 /**
   * Desktop Navigation
   */
@@ -98,12 +98,12 @@
     left: 14px;
     top: calc(100% + 30px);
     margin: 0;
-    margin-top: 11.75%;
-    padding: 10px 0;
+    margin-top: 12%;
+    padding: 20px 0;
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #f1f4ff;
+    background: #ffffff;
     transition: 0.3s;
 }
 
@@ -190,6 +190,10 @@
     .navbar .dropdown .dropdown-section:not(:last-child){
         border-right: 1px solid rgba(146, 146, 146, 0.389);
     }
+
+    .navbar .dropdown ul.tools-dan-panduan{
+        margin-left: -300px;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -263,10 +267,27 @@
 }
 
 .navbar-mobile ul div.login-and-register{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 20px;
+    width: 90%;
+    flex: 1 1;
+    padding: 10px;
+    font-size: 50px;
+    margin-left: 0;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid rgba(146, 146, 146, 0.389);
+    background-color: #ffffff;
+}
+
+.navbar-mobile ul div.login-and-register .login-button{
+    width: 100%;
+}
+
+.navbar-mobile ul div.login-and-register .register-button{
+    width: 100%;
+}
+
+.navbar-mobile ul div.login-and-register .register-button a{
+    display: inline;
 }
 
 .navbar-mobile a,
@@ -291,7 +312,7 @@
     z-index: 99;
     opacity: 1;
     visibility: visible;
-    background: #f1f4ff;
+    background: #f3f3f3;
 }
 
 .navbar-mobile .dropdown ul li {
@@ -371,7 +392,7 @@
 @media screen and (max-width: 1200px) {
     nav#navbar .main-navbar li a {
         font-size: 13px;
-        padding: 10px 0 10px 15px;
+        padding: 10px 15px;
     }
 
     nav#navbar .main-navbar .login-and-register li.register-button a{

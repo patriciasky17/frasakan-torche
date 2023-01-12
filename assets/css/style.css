@@ -168,15 +168,18 @@ button.splide__pagination__page.is-active{
         padding-top: 0px;
     }
 
-    .welcome-section h1{
+    .welcome-section h1,
+    #outro h1{
         text-align: center;
         font-size: 24px;
     }
     
-    .welcome-section p.welcome-description{
+    .welcome-section p.welcome-description,
+    #outro h6{
         font-weight: 400;
         text-align: center;
         font-size: 14px;
+        line-height: 30px;
     }
 
     #welcome{
@@ -222,6 +225,10 @@ button.splide__pagination__page.is-active{
 
     .splide__slide img{
         max-height: 300px;
+    }
+
+    .work-source {
+        margin-bottom: 30px;
     }
 }
 /* End Of Welcome Section */
