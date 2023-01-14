@@ -1,4 +1,5 @@
 :root{
+    /* Will be configured later XD */
     --primary: #FFFDD0;
     --secondary: #292b2c;
     --tertiary: #292b2c;
@@ -529,3 +530,77 @@ img.img-applications{
 }
 
 /* End of Pricing Section */
+
+/* ***************************************************************** */
+/* ***************************************************************** */
+/* ***************************************************************** */
+
+/* Guide Page */
+
+/* Guide Section */
+
+#guide{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+#guide .opening{
+    margin-bottom: 20px;
+}
+
+#guide h3.title {
+    font-weight: 700;
+}
+
+#guide p.description {
+    font-size: 18px;
+    color: #999999;
+}
+
+#guide a.link-to-frasakan-youtube{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #5885E9;
+    font-size: 18px;
+}
+
+#guide .accordion-button{
+    font-weight: 600;
+    border: 2px solid #E1E1E1;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+#guide .accordion-button:hover{
+    background-color: #fafafa;
+}
+
+#guide .accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+#guide .accordion-button::after{
+    transform: scale(0.8);
+}
+
+#guide .accordion-button:not(.collapsed)::after{
+    color: #000000 !important;
+    background-color: none;
+    transform: scale(0.8) rotate(180deg);
+}
+
+#guide .accordion-collapse {
+    background-color: #F3F3F3;
+    border-radius: 8px;
+}
+
+#guide .accordion-collapse .accordion-body{
+    font-weight: 500;
+}
+
+#guide .accordion-item{
+    border: none;
+}
