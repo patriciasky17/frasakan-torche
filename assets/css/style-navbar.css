@@ -57,6 +57,7 @@
     display: flex;
     list-style: none;
     align-items: center;
+    flex-grow: 1;
 }
 
 .navbar li {
@@ -110,6 +111,7 @@
 .navbar .main-navbar{
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .navbar .dropdown ul li {
@@ -170,7 +172,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
 }
 
 #nav #navigation-bar div.dropdown-menu.show .dropdown-section:not(:last-child){
@@ -211,7 +212,7 @@
   */
 .mobile-nav-toggle {
     color: #000000;
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
     display: none;
     line-height: 0;
@@ -220,6 +221,7 @@
 
 .mobile-nav-toggle.bi-x {
     color: rgb(0, 0, 0);
+    margin: 10px;
 }
 
 @media (max-width: 991px) {
@@ -230,8 +232,6 @@
     .navbar ul {
         display: none;
     }
-
-
 }
 
 .navbar-mobile {
@@ -264,6 +264,12 @@
     background-color: #ffffff;
     overflow-y: auto;
     transition: 0.3s;
+}
+
+.navbar-mobile > .main-navbar > ul > li{
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid rgba(146, 146, 146, 0.389);
 }
 
 .navbar-mobile ul div.login-and-register{
@@ -338,7 +344,7 @@
 }
 
 .login-and-register{
-    margin-left: 5%;
+    margin-left: auto;
 }
 
 .login-and-register li.login-button{
@@ -380,7 +386,7 @@
     }
 
     .login-and-register{
-        margin-left: 10px;
+        padding-left: 10px;
     }
 
     .navbar a{
