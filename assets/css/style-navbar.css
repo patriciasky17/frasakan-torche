@@ -46,7 +46,7 @@
 /**
   * Desktop Navigation
   */
-.navbar {
+nav#navbar.navbar {
     padding: 0;
     width: 100%;
 }
@@ -60,12 +60,12 @@
     flex-grow: 1;
 }
 
-.navbar li {
+nav#navbar.navbar li {
     position: relative;
 }
 
-.navbar a,
-.navbar a:focus {
+nav#navbar.navbar a,
+nav#navbar.navbar a:focus {
     display: flex;
     align-items: center;    
     justify-content: space-between;
@@ -79,17 +79,17 @@
     color: #000000;
 }
 
-.navbar a i,
-.navbar a:focus i {
+nav#navbar.navbar a i,
+nav#navbar.navbar a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
+nav#navbar.navbar a:hover,
+nav#navbar.navbar .active,
+nav#navbar.navbar .active:focus,
+nav#navbar.navbar li:hover>a {
     color: #007bff;
 }
 
@@ -343,31 +343,31 @@
     display: block;
 }
 
-.login-and-register{
+nav#navbar.navbar .login-and-register{
     margin-left: auto;
 }
 
-.login-and-register li.login-button{
+nav#navbar.navbar .login-and-register li.login-button{
     margin-right: 10px;
 }
 
-.login-and-register li.login-button a{
+nav#navbar.navbar .login-and-register li.login-button a{
     text-decoration: none;
     padding: 8px 15px; 
 }
 
-.login-and-register li.login-button a:hover{
+nav#navbar.navbar .login-and-register li.login-button a:hover{
     background-color: #c2c2c260;
     border-radius: 5px;
 }
 
-.login-and-register li.register-button{
+nav#navbar.navbar .login-and-register li.register-button{
     border-radius: 5px;
     background-color: #39B04A;
     text-decoration: none;
 }
 
-.login-and-register li.register-button a{
+nav#navbar.navbar .login-and-register li.register-button a{
     color: #ffffff;
     text-decoration: none;
     padding: 8px 15px;
