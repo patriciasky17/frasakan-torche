@@ -37,6 +37,10 @@ h1{
     background-size: 800px;
 }
 
+#welcome span.typed-cursor{
+    scale: 3.5;
+}
+
 .welcome-section{
     padding-top: 100px;
 }

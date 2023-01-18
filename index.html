@@ -280,7 +280,9 @@
         <div class="container welcome-section">
             <div class="row">
                 <div class="col-md-5 col-sm-12 welcome-subsection">
-                    <h1><b>Great Writing, Simplified</b></h1>
+                    <div class="welcome-title d-flex align-items-center">
+                        <h1 id="title-animation"></h1>
+                    </div>
                     <br>
                     <p class="welcome-description">Compose bold, clear, mistake-free writing with Grammarly’s new AI-powered desktop Windows app.</p>
                     <br>
@@ -528,8 +530,11 @@
     <!-- Splide Js (for Carousel) -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
 
-    <script>
+    <!-- Typed Js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+    <script>
+        // For Autoplay in Welcome Section
         var splide = new Splide( '.splide', {
             type   : 'fade',
             rewind: true,
@@ -538,6 +543,19 @@
         });
         
         splide.mount();
+
+        // For Typed Js in Welcome Section
+        var typed3 = new Typed('#title-animation', {
+            strings: ['<b>Great Writing, Simplified</b>'],
+            typeSpeed: 0,
+            backSpeed: 20,
+            backDelay: 3000,
+            startDelay: 1000,
+            typeSpeed: 40,
+            smartBackspace: true, // this is a default
+            loop: true
+        });
+            
     </script>
 
     
